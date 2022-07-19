@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('maven-build') {
       steps {
-        sh './jenkins/mvn clean package'
+        sh 'mvn clean install'
       }
     }
 
