@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('maven-build') {
       steps {
-        sh './jenkins/build.sh'
+        sh './jenkins/mvn clean package'
       }
     }
 
